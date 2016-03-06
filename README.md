@@ -1,4 +1,4 @@
-# raspberrypi
+# Raspberry Pi
 Raspberry Pi related scripts and settings
 
 
