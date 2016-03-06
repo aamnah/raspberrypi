@@ -57,7 +57,7 @@ gpio() {
   if [[ $REPLY =~ ^[Yy]$ ]]
   then
     sudo wget ${REPO}gpio.py -O ${SCRIPTS_PATH}gpio.py
-    chmod +x ${SCRIPTS_PATH}gpio.py
+    sudo chmod +x ${SCRIPTS_PATH}gpio.py
   elif [[ ! $REPLY =~ ^[Yy]$ ]]
   then
     return 1
@@ -72,7 +72,7 @@ imgcat() {
   if [[ $REPLY =~ ^[Yy]$ ]]
   then
     sudo wget https://raw.githubusercontent.com/gnachman/iTerm2/master/tests/imgcat -O ${SCRIPTS_PATH}imgcat.sh
-    chmod +x ${SCRIPTS_PATH}imgcat.sh
+    sudo chmod +x ${SCRIPTS_PATH}imgcat.sh
   elif [[ ! $REPLY =~ ^[Yy]$ ]] 
   then
     return 1
@@ -106,6 +106,8 @@ motd
 gpio
 imgcat
 aliases
+
+echo "Reloadig.. "
 reload
 
 echo "All done. Enjoy!"
