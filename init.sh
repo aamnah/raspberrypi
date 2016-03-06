@@ -35,7 +35,7 @@ motd() {
   if [[ $REPLY =~ ^[Yy]$ ]]
   then
     # download and save motd file
-    wget ${REPO}motd.sh -O /etc/profile.d/motd.sh
+    sudo wget ${REPO}motd.sh -O /etc/profile.d/motd.sh
     # owner
     sudo chown root:root /etc/profile.d/motd.sh
     # permissions
@@ -56,7 +56,7 @@ gpio() {
   echo    # (optional) move to a new line
   if [[ $REPLY =~ ^[Yy]$ ]]
   then
-    wget ${REPO}gpio.py -O ${SCRIPTS_PATH}gpio.py
+    sudo wget ${REPO}gpio.py -O ${SCRIPTS_PATH}gpio.py
     chmod +x ${SCRIPTS_PATH}gpio.py
   elif [[ ! $REPLY =~ ^[Yy]$ ]]
   then
@@ -71,7 +71,7 @@ imgcat() {
   echo
   if [[ $REPLY =~ ^[Yy]$ ]]
   then
-    wget https://raw.githubusercontent.com/gnachman/iTerm2/master/tests/imgcat -O ${SCRIPTS_PATH}imgcat.sh
+    sudo wget https://raw.githubusercontent.com/gnachman/iTerm2/master/tests/imgcat -O ${SCRIPTS_PATH}imgcat.sh
     chmod +x ${SCRIPTS_PATH}imgcat.sh
   elif [[ ! $REPLY =~ ^[Yy]$ ]] 
   then
@@ -92,7 +92,7 @@ aliases() {
 #########################
 reload() {
   source ~/.bashrc
-  service ssh restart
+  sudo service ssh restart
   # Empty Temp dir?
 }
 
