@@ -34,3 +34,9 @@ Similarly, to turn it off:
 is the same as
 
     gpio 2 true
+
+## motd.sh
+Sets the Message of the day.
+
+- Is able to identify between the three Pi versions (B, B+, 2 B) i have
+- Shows internal and external IP addresses
