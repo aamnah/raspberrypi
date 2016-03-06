@@ -24,7 +24,7 @@ bashrc() {
   # Would you like to update it? (y/n)
   # if y
   # take NEW_HOSTNAME
-  # hostname NEW_HOSTNAME
+  # sudo hostname NEW_HOSTNAME
 
 
 # MOTD
@@ -58,10 +58,6 @@ gpio() {
   then
     wget ${REPO}gpio.py -O ${SCRIPTS_PATH}gpio.py
     chmod +x ${SCRIPTS_PATH}gpio.py
-    echo "
-    # GPIO 
-    alias gpio='gpio.py'
-    " >> ~/.bashrc
   elif [[ ! $REPLY =~ ^[Yy]$ ]]
   then
     return 1
@@ -77,16 +73,21 @@ imgcat() {
   then
     wget https://raw.githubusercontent.com/gnachman/iTerm2/master/tests/imgcat -O ${SCRIPTS_PATH}imgcat.sh
     chmod +x ${SCRIPTS_PATH}imgcat.sh
-    echo "
-    # imgcat
-    alias imgcat='imgcat.sh'
-    " >> ~/.bashrc
   elif [[ ! $REPLY =~ ^[Yy]$ ]] 
   then
     return 1
   fi
 }
 
+# Bash Aliases
+aliases() {
+    echo "
+    # GPIO 
+    alias gpio='gpio.py'
+    # imgcat
+    alias imgcat='imgcat.sh'
+    " >> ~/.bashrc
+}
 # Reload settings / files
 #########################
 reload() {
@@ -104,6 +105,7 @@ bashrc
 motd
 gpio
 imgcat
+aliases
 reload
 
 echo "All done. Enjoy!"
