@@ -19,14 +19,13 @@ bashrc() {
 
 # HOSTNAME
 ##########
-hostname() {
   # Your current hostname is:
   # hostname
   # Would you like to update it? (y/n)
   # if y
   # take NEW_HOSTNAME
   # hostname NEW_HOSTNAME
-}
+
 
 # MOTD
 ######
@@ -102,7 +101,7 @@ reload() {
 
 
 bashrc
-hostname
+# hostname
 motd
 gpio
 imgcat
