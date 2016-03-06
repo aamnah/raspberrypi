@@ -101,7 +101,6 @@ reload() {
 
 
 bashrc
-# hostname
 motd
 gpio
 imgcat
