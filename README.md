@@ -1,7 +1,7 @@
 # Raspberry Pi
 Raspberry Pi related scripts and settings
 
-Note: This repo is a draft, main purpose is to serve as a backup as a go along experimenting. I haven't spend much time _prettifying_ it i.e. (my usual level of comments and testing) as the priority was figuring out _what does this button do?_. 
+Note: This repo is a draft, main purpose is to serve as a backup as I go along experimenting. I haven't spend much time _prettifying_ it i.e. (my usual level of comments and testing) as the priority was figuring out _what does this button do?_. 
 
 
 ### Run `init.sh`
