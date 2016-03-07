@@ -3,7 +3,7 @@
 # basic usage
 # gpio 2 on  # equal to RPi.GPIO.output(2, RPi.GPIO.HIGH)
 # gpio 2 off # equal to RPi.GPIO.output(2, RPi.GPIO.LOW)
-# gpio clear # equal to RPi.GPIO.clear()
+# gpio clear # equal to RPi.GPIO.cleanup()
 
 # import the python module that controls Pi GPIO pins
 import RPi.GPIO as GPIO
