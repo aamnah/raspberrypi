@@ -48,5 +48,6 @@ is the same as
 ## motd.sh
 Sets the Message of the day.
 
-- Is able to identify between the three Pi versions (B, B+, 2 B) i have (More can be added easily if need be)
+- Says hello in French
+- Is able to identify between the three Pi versions (B, B+, 2 B) i have. (More can be added easily if need be)
 - Shows internal and external IP addresses
