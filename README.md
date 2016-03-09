@@ -49,5 +49,7 @@ is the same as
 Sets the Message of the day.
 
 - Says hello in French
-- Is able to identify between the three Pi versions (B, B+, 2 B) i have. (More can be added easily if need be)
+- Identifies the Raspberry Pi version.
 - Shows internal and external IP addresses
+
+![motd-screenshot](https://raw.githubusercontent.com/aamnah/raspberrypi/master/screenshots/motd.png)
