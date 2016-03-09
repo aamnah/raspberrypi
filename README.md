@@ -22,7 +22,7 @@ The script has some logic built-in, it asks you if you want to install a script,
 ### gpio.py
 `gpio.py` is a python script that let's you turn any GPIO pin on or off with a Terminal command.
 
-![Screenshot 2016-03-04 00.58.48.png](quiver-image-url/60F7542ADC587D7FEB228861EA66AA31.png)
+![GPIO screenshot](https://raw.githubusercontent.com/aamnah/raspberrypi/master/screenshots/gpio.png)
 
 The general format is:
   
